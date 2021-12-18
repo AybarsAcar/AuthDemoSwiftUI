@@ -11,6 +11,11 @@
 		00CFD9C2276E8DD800A5D011 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFD9C1276E8DD800A5D011 /* ContentView.swift */; };
 		00CFD9C4276E8DDA00A5D011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CFD9C3276E8DDA00A5D011 /* Assets.xcassets */; };
 		00CFD9C7276E8DDA00A5D011 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CFD9C6276E8DDA00A5D011 /* Preview Assets.xcassets */; };
+		00CFD9D4276E8E2F00A5D011 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFD9D3276E8E2F00A5D011 /* Account.swift */; };
+		00CFD9D6276E8E5D00A5D011 /* UnAuthorisedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFD9D5276E8E5D00A5D011 /* UnAuthorisedView.swift */; };
+		00CFD9D8276E8E7800A5D011 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFD9D7276E8E7800A5D011 /* WebService.swift */; };
+		00CFD9DA276E922400A5D011 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFD9D9276E922400A5D011 /* LoginViewModel.swift */; };
+		00CFD9DC276E9B9000A5D011 /* AccountListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CFD9DB276E9B9000A5D011 /* AccountListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		00CFD9C1276E8DD800A5D011 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00CFD9C3276E8DDA00A5D011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00CFD9C6276E8DDA00A5D011 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00CFD9D3276E8E2F00A5D011 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		00CFD9D5276E8E5D00A5D011 /* UnAuthorisedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnAuthorisedView.swift; sourceTree = "<group>"; };
+		00CFD9D7276E8E7800A5D011 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		00CFD9D9276E922400A5D011 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		00CFD9DB276E9B9000A5D011 /* AccountListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +64,12 @@
 				00CFD9BF276E8DD800A5D011 /* AuthDemoApp.swift */,
 				00CFD9C1276E8DD800A5D011 /* ContentView.swift */,
 				00CFD9C3276E8DDA00A5D011 /* Assets.xcassets */,
+				00CFD9D0276E8E0600A5D011 /* Extensions */,
+				00CFD9CD276E8DF200A5D011 /* Models */,
 				00CFD9C5276E8DDA00A5D011 /* Preview Content */,
+				00CFD9CE276E8DFA00A5D011 /* Services */,
+				00CFD9CF276E8DFF00A5D011 /* ViewModels */,
+				00CFD9D1276E8E1300A5D011 /* Views */,
 			);
 			path = AuthDemo;
 			sourceTree = "<group>";
@@ -65,6 +80,46 @@
 				00CFD9C6276E8DDA00A5D011 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00CFD9CD276E8DF200A5D011 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00CFD9D3276E8E2F00A5D011 /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00CFD9CE276E8DFA00A5D011 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00CFD9D7276E8E7800A5D011 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00CFD9CF276E8DFF00A5D011 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				00CFD9D9276E922400A5D011 /* LoginViewModel.swift */,
+				00CFD9DB276E9B9000A5D011 /* AccountListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		00CFD9D0276E8E0600A5D011 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		00CFD9D1276E8E1300A5D011 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00CFD9D5276E8E5D00A5D011 /* UnAuthorisedView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CFD9DC276E9B9000A5D011 /* AccountListViewModel.swift in Sources */,
 				00CFD9C2276E8DD800A5D011 /* ContentView.swift in Sources */,
 				00CFD9C0276E8DD800A5D011 /* AuthDemoApp.swift in Sources */,
+				00CFD9DA276E922400A5D011 /* LoginViewModel.swift in Sources */,
+				00CFD9D4276E8E2F00A5D011 /* Account.swift in Sources */,
+				00CFD9D8276E8E7800A5D011 /* WebService.swift in Sources */,
+				00CFD9D6276E8E5D00A5D011 /* UnAuthorisedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
